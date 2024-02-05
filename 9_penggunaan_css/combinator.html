@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sharing Web</title>
+  <style>
+    /* pemilih keturunan (spasi) */
+    div p {
+      color: red;
+    }
+    /* pemilih anak (>) */
+    div > p {
+      color: blue;
+    }
+    /* pemilih saudara yang berdekatan (+) */
+    span + p {
+      background-color: aqua;
+    }
+    p ~ span > p {
+      background-color: brown;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <p>paragraf 1</p>
+    <span><p>paragraf 2</p></span>
+    <p>paragraf 3</p>
+    <p>paragraf 4</p>
+    <span><p>paragraf 5</p></span>
+    <p>paragraf 6</p>
+  </div>
+</body>
+</html>

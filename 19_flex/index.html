@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sharing Web</title>
+    <style>
+      div {
+        display: flex;
+        border: 1px solid black;
+        height: 300px;
+      }
+      div > div {
+        width: 100px;
+        height: 100px;
+        background-color: yellow;
+      }
+      .column {
+        flex-direction: column;
+      }
+      .rowreverse {
+        flex-direction: row-reverse;
+      }
+      .columnreverse {
+        flex-direction: column-reverse;
+      }
+      .wrap {
+        flex-wrap: wrap;
+      }
+      .wrapreverse {
+        flex-wrap: wrap-reverse;
+      }
+      .justifyend {
+        justify-content: flex-end;
+      }
+      .justifycenter {
+        justify-content: center;
+      }
+      .justifyspacebetween {
+        justify-content: space-between;
+      }
+      .justifyspacearound {
+        justify-content: space-around;
+      }
+      .justifyspaceevenly {
+        justify-content: space-evenly;
+      }
+      .alignitemsend{
+        align-items: flex-end;
+      }
+      .alignitemscenter {
+        align-items: center;
+      }
+      .alignitemsstretch {
+        align-items: stretch;
+      }
+      .alignitemsbaseline {
+        align-items: baseline;
+      }
+      .aligncontentstart {
+        align-content: flex-start;
+      }
+      .aligncontentend {
+        align-content: flex-end;
+      }
+      .aligncontentcenter {
+        align-content: center;
+      }
+      .aligncontentspacebetween {
+        align-content: space-between;
+      }
+      .aligncontentspacearound {
+        align-content: space-around;
+      }
+    </style>
+  </head>
+  <body>
+    <p>flex direction row / default</p>
+    <div>
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+    <p>flex direction column</p>
+    <div class="column">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+    <p>flex direction row reverse</p>
+    <div class="rowreverse">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+    <p>flex direction column reverse</p>
+    <div class="columnreverse">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+    <p>flex wrap nowrap / default</p>
+    <div>
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+      <div>10</div>
+      <div>11</div>
+      <div>12</div>
+      <div>13</div>
+      <div>14</div>
+      <div>15</div>
+      <div>16</div>
+      <div>17</div>
+      <div>18</div>
+    </div>
+    <p>flex wrap</p>
+    <div class="wrap">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+      <div>10</div>
+      <div>11</div>
+      <div>12</div>
+      <div>13</div>
+      <div>14</div>
+      <div>15</div>
+      <div>16</div>
+      <div>17</div>
+      <div>18</div>
+    </div>
+    <p>flex wrap reverse</p>
+    <div class="wrapreverse">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+      <div>10</div>
+      <div>11</div>
+      <div>12</div>
+      <div>13</div>
+      <div>14</div>
+      <div>15</div>
+      <div>16</div>
+      <div>17</div>
+      <div>18</div>
+    </div>
+    <p>justify content flex start / default</p>
+    <div>
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+    <p>justify content flex end</p>
+    <div class="justifyend">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+    <p>justify content center</p>
+    <div class="justifycenter">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+    <p>justify content space between</p>
+    <div class="justifyspacebetween">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+    <p>justify content space around</p>
+    <div class="justifyspacearound">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+    <p>justify content space evenly</p>
+    <div class="justifyspaceevenly">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+    <p>align items flex start / default</p>
+    <div>
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+    <p>align items flex end</p>
+    <div class="alignitemsend">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+    <p>align items flex center</p>
+    <div class="alignitemscenter">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+    <p>align items flex stretch / default (jika tidak ada height)</p>
+    <div class="alignitemsstretch">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+    <p>align items flex baseline</p>
+    <div class="alignitemsbaseline">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+    <p>align content flex start</p>
+    <div class="wrap aligncontentstart">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+      <div>10</div>
+      <div>11</div>
+      <div>12</div>
+      <div>13</div>
+      <div>14</div>
+      <div>15</div>
+      <div>16</div>
+      <div>17</div>
+      <div>18</div>
+    </div>
+    <p>align content flex end</p>
+    <div class="wrap aligncontentend">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+      <div>10</div>
+      <div>11</div>
+      <div>12</div>
+      <div>13</div>
+      <div>14</div>
+      <div>15</div>
+      <div>16</div>
+      <div>17</div>
+      <div>18</div>
+    </div>
+    <p>align content flex space center</p>
+    <div class="wrap aligncontentcenter">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+      <div>10</div>
+      <div>11</div>
+      <div>12</div>
+      <div>13</div>
+      <div>14</div>
+      <div>15</div>
+      <div>16</div>
+      <div>17</div>
+      <div>18</div>
+    </div>
+    <p>align content flex space between</p>
+    <div class="wrap aligncontentspacebetween">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+      <div>10</div>
+      <div>11</div>
+      <div>12</div>
+      <div>13</div>
+      <div>14</div>
+      <div>15</div>
+      <div>16</div>
+      <div>17</div>
+      <div>18</div>
+    </div>
+    <p>align content flex space around</p>
+    <div class="wrap aligncontentspacearound">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+      <div>10</div>
+      <div>11</div>
+      <div>12</div>
+      <div>13</div>
+      <div>14</div>
+      <div>15</div>
+      <div>16</div>
+      <div>17</div>
+      <div>18</div>
+    </div>
+    <p>align content flex space stretch</p>
+    <div class="wrap aligncontentspacestretch">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+      <div>10</div>
+      <div>11</div>
+      <div>12</div>
+      <div>13</div>
+      <div>14</div>
+      <div>15</div>
+      <div>16</div>
+      <div>17</div>
+      <div>18</div>
+    </div>
+  </body>
+</html>

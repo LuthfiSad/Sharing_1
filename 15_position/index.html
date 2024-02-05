@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sharing Web</title>
+    <style>
+      body{
+        min-height: 2000px;
+      }
+      div {
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        padding: 5px;
+        box-sizing: border-box;
+      }
+      .relative {
+        background-color: aqua;
+        position: relative;
+        right: 100px;
+      }
+      .absolute {
+        background-color: blue;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
+      .inrelative {
+        background-color: yellow;
+        position: relative;
+        width: 500px;
+        height: 500px;
+      }
+      .fixed {
+        background-color: green;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+      }
+      .sticky {
+        background-color: orange;
+        position: sticky;
+        top: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <p>position static / default</p>
+    <div>static</div>
+    <p>position relative</p>
+    <div class="relative">relative, posisi yang lama akan tetap ada walaupun posisinya udah pindah</div>
+    <p>position absolute</p>
+    <div class="absolute">absolute, posisi yang lama akan menghilang, dan di anggap tidak ada</div>
+    <p>position absolute di dalam relative</p>
+    <div class="inrelative">
+      ini relative
+      <div class="absolute">absolute, absolute tidak akan bisa keluar jika parent nya relative</div>
+    </div>
+    <p>position fixed</p>
+    <div class="fixed">fixed, akan tetap berada di situ walaupun di scroll</div>
+    <p>position sticky</p>
+    <div class="sticky">sticky, sama seperti fixed, tetapi akan scroll ketika sudah sesuai dengan posisinya</div>
+  </body>
+</html>

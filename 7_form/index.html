@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sharing Web</title>
+</head>
+<body>
+  <form action="" onsubmit="submitHandle(event)">
+    <div>
+      <p>Input:</p>
+      <label for="input">input: </label>
+      <input type="text" name="input" id="input">
+    </div>
+    <div>
+      <label for="cars">Select: </label>
+      <select name="cars" id="cars">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+      </select>
+    </div>
+    <div>
+      <label for="textarea">textarea: </label>
+      <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
+    </div>
+    <div>
+      <label for="textarea">button: </label>
+      <button>Submit</button>
+    </div>
+  </form>
+  <script>
+    function submitHandle(event) {
+      event.preventDefault();
+      console.log(event.target.input.value);
+    }
+  </script>
+</body>
+</html>

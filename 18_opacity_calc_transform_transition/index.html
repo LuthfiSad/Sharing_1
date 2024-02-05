@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sharing Web</title>
+  <style>
+    div{
+      width: 200px;
+      height: 200px;
+    }
+    .opacity{
+      opacity: 0.5;
+      background-color: rgb(255, 255, 0) !important;
+    }
+    .rgba{
+      background-color: rgba(255, 255, 0, 0.5);
+    }
+    .calc{
+      font-size: calc(100% + 10px);
+    }
+    .translate{
+      transform: translateX(200px);
+      background-color: black;
+      color: white;
+    }
+    .rotate{
+      transform: rotate(45deg);
+      background-color: black;
+      color: white;
+    }
+    .scale{
+      transform: scale(1.5) translate(300px, -200px);
+      background-color: black;
+      color: white;
+    }
+    div>p{
+      font-size: 100px;
+      transition: transform 1s;
+    }
+    div>p:hover{
+      transform: rotate(360deg);
+    }
+  </style>
+</head>
+<body>
+  <p>ini opacity</p>
+  <div style="background-color: red;" class="opacity">
+  hello bang</div>
+  <p>ini RGBA</p>
+  <div class="rgba">hello bang</div>
+  <p class="calc">ini calc(100% + 10px)</p>
+  <p>transform</p>
+  <p>translate</p>
+  <div class="translate">translate right 200px</div>
+  <p>rotate</p>
+  <div class="rotate">rotate 45 derajat</div>
+  <p>scale</p>
+  <div class="scale">scale 1.5 translate x = 300px, y = -200px)</div>
+  <div>
+    <p>❤️</p>
+  </div>
+</body>
+</html>

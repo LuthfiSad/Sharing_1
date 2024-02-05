@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sharing Web</title>
+  <style>
+    p {
+      width: 300px;
+      border-top: 1px solid black;
+    }
+    p ~ div {
+      width: 200px;
+      border: 1px solid black;
+    }
+    .hidden {
+      overflow: hidden;
+    }
+    .scroll {
+      overflow: scroll;
+    }
+    .scrollx {
+      overflow-x: scroll;
+    }
+    .auto {
+      overflow: auto;
+    }
+  </style>
+</head>
+<body>
+  <p>overflow default / visible</p>
+  <div>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum error cumque inventore, eveniet culpa numquam et, architecto totam quos molestias voluptas expedita. Nam velit ratione architecto voluptatibus tempore quidem nemo?</p>
+  </div>
+  <p>overflow hidden</p>
+  <div class="hidden">
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum error cumque inventore, eveniet culpa numquam et, architecto totam quos molestias voluptas expedita. Nam velit ratione architecto voluptatibus tempore quidem nemo?</p>
+  </div>
+  <p>overflow scroll</p>
+  <div class="scroll">
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum error cumque inventore, eveniet culpa numquam et, architecto totam quos molestias voluptas expedita. Nam velit ratione architecto voluptatibus tempore quidem nemo?</p>
+  </div>
+  <p>overflow scroll sumbu x</p>
+  <div class="scrollx">
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum error cumque inventore, eveniet culpa numquam et, architecto totam quos molestias voluptas expedita. Nam velit ratione architecto voluptatibus tempore quidem nemo?</p>
+  </div>
+  <p>overflow auto</p>
+  <div class="auto">
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum error cumque inventore, eveniet culpa numquam et, architecto totam quos molestias voluptas expedita. Nam velit ratione architecto voluptatibus tempore quidem nemo?</p>
+  </div>
+</body>
+</html>

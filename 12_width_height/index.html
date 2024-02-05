@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sharing Web</title>
+  <style>
+    .height100vh {
+      height: 100vh;
+      background-color: red;
+    }
+    .width {
+      width: 200px;
+      height: 100px;
+      background-color: red;
+    }
+    .width p {
+      width: 100px;
+      height: 100px;
+      background-color: yellow;
+    }
+    .minwidth {
+      width: 200px;
+      min-height: 100px;
+      background-color: green;
+    }
+    .minwidth p {
+      width: 100px;
+      height: 100px;
+      background-color: yellow;
+    }
+    .border {
+      width: 200px;
+      height: 200px;
+      border: 10px solid red;
+    }
+    .radius {
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="height100vh">height nya 100vh</div>
+  <p>kekurangan menggunakan width</p>
+  <div class="width">
+    width 200px, height100px, background merah
+    <p>ini height nya 100px</p>
+  </div>
+  <p>solusi menggunakan min-width</p>
+  <div class="minwidth">
+    width 200px, min-height100px, background green
+    <p>ini height nya 100px</p>
+  </div>
+  <div class="border">ini border</div>
+  <div class="border radius">ini border radius 10px</div>
+</body>
+</html>
